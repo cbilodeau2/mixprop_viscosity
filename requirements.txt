@@ -3,7 +3,7 @@ hyperopt
 matplotlib
 numpy
 pandas
-pytorch
+torch
 rdkit
 scikit-learn
 scipy
