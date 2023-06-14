@@ -1,0 +1,13 @@
+flask
+hyperopt
+matplotlib
+numpy
+pandas
+pytorch
+rdkit
+scikit-learn
+scipy
+tensorboardX
+torchvision
+tqdm
+typed-argument-parser
