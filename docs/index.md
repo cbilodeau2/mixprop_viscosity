@@ -8,6 +8,7 @@
 
 
 -   Free software: MIT license
+-   [Installation](/docs/installation.md)
 -   [Usage](/docs/usage.md)    
 
 ## Features
