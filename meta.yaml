@@ -1,5 +1,5 @@
 {% set name = "mixprop" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -33,7 +33,7 @@ requirements:
     - torchvision
     - tqdm
     - rdkit
-    - zenodo-get
+    - zenodo_get
     - typed-argument-parser
 
 test:

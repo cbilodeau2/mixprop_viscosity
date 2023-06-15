@@ -10,5 +10,5 @@ scipy
 tensorboardX
 torchvision
 tqdm
-zenodo-get
+zenodo_get
 typed-argument-parser
