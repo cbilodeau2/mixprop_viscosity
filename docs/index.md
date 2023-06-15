@@ -8,7 +8,7 @@
 
 
 -   Free software: MIT license
--   [Usage](/usage.md)    
+-   [Usage](/docs/usage.md)    
 
 ## Features
 
