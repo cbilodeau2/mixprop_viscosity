@@ -11,6 +11,4 @@
 -   [Installation](/docs/installation.md)
 -   [Usage](/docs/usage.md)    
 
-## Features
 
--   TODO
