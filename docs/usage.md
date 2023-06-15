@@ -34,7 +34,6 @@ args = {'smi1': 'O',
 # out = [viscosity (cp), reliability (bool)]
 
 from mixprop.visc_pred_wrapper import visc_pred_single
-import matplotlib.pyplot as plt
 
 out = visc_pred_single(args)
 
