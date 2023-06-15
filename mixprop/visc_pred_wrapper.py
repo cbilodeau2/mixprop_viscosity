@@ -2,12 +2,23 @@ import numpy as np
 import os
 import pandas as pd
 from pathlib import Path
+import zenodo_get as zget
+from zipfile import ZipFile
 
 from mixprop.train import predict
 from mixprop.data import MoleculeDataset, MoleculeDataLoader, MoleculeDatapoint
 from mixprop.utils import load_args, load_checkpoint, load_scalers
 
 from rdkit import Chem
+
+
+def download_models():
+    
+    zget.zenodo_get(["-r 8042966"])
+
+    with ZipFile("pretrained_models.zip","r") as zObject:
+
+        zObject.extractall(path=".")
 
 
 class mixprop_model():
