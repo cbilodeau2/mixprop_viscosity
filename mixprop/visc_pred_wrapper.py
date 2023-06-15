@@ -78,8 +78,8 @@ def onepoint_assertions(args):
     # Requirements:
     assert type(args['smi1'])==str, 'Molecules need to be input as SMILES strings.'
     assert type(args['smi2'])==str, 'Molecules need to be input as SMILES strings.'
-    assert (type(args['T'])==float)|(type(args['T'])==int)|(type(args['T'])==np.int64)|(type(args['T'])==np.float), 'Temperature needs to be input as a number.'
-    assert (type(args['molfrac1'])==float)|(type(args['molfrac1'])==int)|(type(args['T'])==np.int64)|(type(args['T'])==np.float), 'Mole fraction needs to be input as a number.'
+    assert (type(args['T'])==float)|(type(args['T'])==int)|(type(args['T'])==np.int64)|(type(args['T'])==float), 'Temperature needs to be input as a number.'
+    assert (type(args['molfrac1'])==float)|(type(args['molfrac1'])==int)|(type(args['T'])==np.int64)|(type(args['T'])==float), 'Mole fraction needs to be input as a number.'
     
     assert (args['molfrac1']>=0.0)&(args['molfrac1']<=1.0), 'Mole fraction needs to be between 0 and 1.'
     

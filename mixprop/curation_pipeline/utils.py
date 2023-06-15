@@ -10,6 +10,8 @@ def report_stats(nist_knovel_all, test_mols):
     test_mols: list containing compounds to held out of the training set and assigned to the test set    
     """
 
+    nist_knovel_all = nist_knovel_all.drop(columns=["ID_1","ID_2","Ref_ID"])
+
     # Average over all data that looks like duplicates before checkpointing
     nist_knovel_all_nodup = nist_knovel_all.groupby(
         ["MOL_1", "MOL_2", "MolFrac_1"]
