@@ -8,8 +8,7 @@
 
 
 -   Free software: MIT license
--   Documentation: <https://cbilodeau2.github.io/mixprop>
-    
+-   [Usage](/usage.md)    
 
 ## Features
 
