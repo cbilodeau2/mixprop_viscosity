@@ -1,0 +1,52 @@
+{% set name = "mixprop" %}
+{% set version = "0.0.2" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mixprop-{{ version }}.tar.gz
+  sha256: 04286493ce287daaf574162c104a827a098c1b2e403edc8fc9f34dae31a20c79
+
+build:
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0 
+
+requirements:
+  host:
+    - python >=3.8
+    - pip
+    - setuptools
+  run:
+    - python >=3.8
+    - flask
+    - matplotlib-base
+    - numpy
+    - pandas
+    - pytorch
+    - scikit-learn
+    - scipy
+    - hyperopt
+    - tensorboardx
+    - torchvision
+    - tqdm
+    - rdkit
+    - zenodo-get
+    - typed-argument-parser
+
+test:
+  imports:
+    - mixprop
+
+
+about:
+  home: https://github.com/cbilodeau2/mixprop_viscosity
+  summary: Viscosity prediction for binary liquid mixtures
+  license: MIT
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - cbilodeau2 
