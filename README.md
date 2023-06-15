@@ -9,9 +9,7 @@
 
 
 -   Free software: MIT license
--   Documentation: https://cbilodeau2.github.io/mixprop
-    
+-   [Installation](/docs/installation.md)
+-   [Usage](/docs/usage.md)    
 
-## Features
 
--   TODO
